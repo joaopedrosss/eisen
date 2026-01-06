@@ -1,0 +1,33 @@
+body{
+    background-color: #181818;
+
+}
+
+h1 {
+    color:#682F9A;
+    font-size: 40px;
+    text-align:center;
+}
+
+button {
+    background-color: #5F1690; 
+    color:#fff;
+    border: none;  
+    height:45px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #9d51cf;
+}
+
+input{
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #682F9A;
+    outline:none;
+
+}
+
+

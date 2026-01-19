@@ -20,7 +20,7 @@ button {
     height:45px;
     cursor:pointer;
     transition: 0.5s;
-    width:90px;
+    width:95px;
 }
 
 button:hover{
@@ -51,9 +51,19 @@ li {
     background-color: #4a148c;
     padding: 10px;
     margin: 10px auto;
+
+    font-weight: bold;
+
     border-radius: 5px;
     color: #eee;
-    
+
+    display:flex;
+    text-align: center;
+    justify-content: space-between ;
 
 
+}
+
+span{
+    cursor: pointer;
 }

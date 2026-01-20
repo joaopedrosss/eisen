@@ -10,12 +10,22 @@ function adicionarTodo(){
 
     console.log(input)
 
-    document.querySelector("input").value = ""
-
     let li = document.createElement("li")
 
-    li.innerHTML = input + "<span>❌</span>"
+    li.innerHTML = input + '<span onclick="deletarTodo(this)">❌</span>'
 
-    console.log(li)
+    document.querySelector("ul").appendChild(li)
+
+    document.querySelector("input").value = ""
+
+
+    console.log("Ta lá,vey")
    
+}
+
+function deletarTodo(obj){
+    console.log(obj)
+
+    obj.parentElement.remove()
+    
 }

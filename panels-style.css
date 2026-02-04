@@ -26,6 +26,8 @@
     
     border:1px solid  black;
     
+
+    
 }
 
 h1{
@@ -45,7 +47,6 @@ input{
 }
 
 ul{
-    border: solid 1px blue;
 
     list-style-type: none;
     padding: 0;
@@ -62,7 +63,7 @@ ul{
 }
 
 li{
-    border: solid 1px red;
+    border: solid 1px black;
     text-align: center;
     width:60%;
     height: 30px;
@@ -70,5 +71,36 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.input-task{
+    display: flex;
+    
+    justify-content: center;
+
+
+
+    gap: 2px;
+}
+
+
+input{
+    outline: none;
+    border: solid black 1px;
+
+    margin-left: 43px;
+
+    width:60%;
+    height: 38px;
+
+    padding: 5px;
+
+}
+
+button{
+    height: 38px;
+    visibility: hidden;
 }
 

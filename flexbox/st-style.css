@@ -1,0 +1,50 @@
+*{
+
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+
+    
+}
+
+section{
+    border: 3px solid oklch(44.2% 0.017 285.786);
+}
+
+ul{
+    margin:30px;
+}
+
+.salary{
+    
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    background-color: oklch(55.6% 0 0);
+    color: #fff;
+
+    padding: 10px;
+
+}
+
+h3{
+    margin:20px;
+    background-color: oklch(84.1% 0.238 128.85);
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+}

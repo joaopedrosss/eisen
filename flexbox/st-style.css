@@ -9,18 +9,31 @@ body{
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-wrap: wrap;
 
-    width: 100vw;
+
     height: 100vh;
+    width: 100vw;
 }
 
 main{
-
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap ;
+    max-width: 80%;
+    gap:10px;
+ 
     
 }
 
 section{
     border: 3px solid oklch(44.2% 0.017 285.786);
+    display: flex;
+    flex-basis: 250px;
+    flex-grow: 1;
+    flex-direction: column;
+
 }
 
 ul{
@@ -28,12 +41,15 @@ ul{
 }
 
 .salary{
-    
+    display: flex;
+    align-items: center;    
+
 }
 
 h2{
     font-size: 2rem;
-    text-align: center;
+        text-align: center;
+
     background-color: oklch(55.6% 0 0);
     color: #fff;
 
@@ -47,4 +63,8 @@ h3{
     color: #fff;
     padding: 3px;
     border-radius: 3px;
+}
+
+section:nth-child(3) h2{
+    background-color: #6b129b;
 }

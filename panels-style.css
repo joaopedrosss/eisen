@@ -32,7 +32,7 @@
 
 h1{
     padding: 20px;
-    font-size:22px;
+    font-size:1.3rem;
     font-family: Arial, Helvetica, sans-serif;
 
 
@@ -73,6 +73,8 @@ li{
     align-items: center;
 
     flex-wrap: wrap;
+
+    font-size: 0.9rem;
 }
 
 .input-task{
@@ -104,3 +106,44 @@ button{
     visibility: hidden;
 }
 
+.switch{
+    display: none;
+}
+
+@media only screen and (max-width:741px){
+    #QII, #QIII, #QIV{
+       display: none; 
+    }
+
+    #QI{
+        height: 100vh;
+    }
+
+    li,input{
+        width: 70%;
+    }
+
+    button{
+        visibility: visible;
+    }
+
+    .switch{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+
+        background-color: blue;
+        border: solid 1px black;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+
+        position: absolute;
+        bottom: 30px;
+        left: 500px;
+        
+    }
+
+    
+}

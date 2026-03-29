@@ -1,0 +1,61 @@
+*{
+
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+main{
+
+
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+section{
+    border: solid 1px black;
+    height: 400px;
+    width: 20%;;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items:center;
+
+}
+
+
+ul{
+    border: solid 1px black;
+    width: 100%;
+
+    text-align: center;
+
+    height: 30%;
+
+
+}
+
+.salary{
+    border: solid 1px black;
+    text-align: center;
+
+    width: 100%;
+
+
+
+    
+
+}
+
+
+
+li{
+    list-style-type: none;
+}

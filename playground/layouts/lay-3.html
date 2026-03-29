@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            margin: 3px;
+            flex: 1 1 100vw; /*flex-grown flex-shrink flex-basis*/
+            flex-wrap: wrap;
+        }
+
+        header, main, nav, aside,footer{
+            display:flex;
+            margin: 3px;  
+
+            background-color: #a1a1a1;
+
+
+        }
+
+        header{
+            flex: 1 1 100vw; /*flex-grown flex-shrink flex-basis*/
+            height: 100px;
+        }
+
+        nav{     
+            flex: 1 1 200px; /*flex-grown flex-shrink flex-basis*/
+        }
+
+        main{
+            flex: 20 1 500px; /*flex-grown flex-shrink flex-basis*/
+            height: calc(100vh - 224px); /* 100% visual height - (header+footer+ margin*4)  */
+
+            /* isso permite o rolamento vertical! */
+        }
+
+        aside{
+            flex: 1 1 200px; /*flex-grown flex-shrink flex-basis*/
+
+        }
+
+        footer{
+            flex: 1 1 100vw; /*flex-grown flex-shrink flex-basis*/
+            height: 100px;
+        }
+
+        @media only screen and (max-width:923px) {
+            main {
+                height: calc(100vh - 330px); /* diminuiu a tela? menos 100px */
+            }
+
+            aside{
+                flex: 1 1 100vw; /*flex-grown flex-shrink flex-basis*/
+                height: 100px;
+            }
+        }
+
+        @media only screen and (max-width:717px){
+            nav{
+                height: 100px;
+
+            }
+            main{
+                height: calc(100vh - 436px); /* agora que a a nav tme um tamanho fixo, desconte o taamnho dela mais as maergens*/
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>Cabeçalho</header>
+    <nav>Menu</nav>
+    <main>Principal</main>
+    <aside>Relacionados</aside>
+    <footer>Rodapé</footer>
+    
+</body>
+</html>
